@@ -13,6 +13,11 @@
 |
 */
 
+$router->get('/test', function () {
+    return "wer";
+});
+
+
 $router->get('/', function (Codedge\Fpdf\Fpdf\Fpdf $fpdf) use ($router) {
     $fpdf->AddPage();
     $fpdf->SetFont('Courier', 'B', 18);
